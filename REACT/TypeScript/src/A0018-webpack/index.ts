@@ -1,1 +1,1 @@
-console.log('Olá Mundo!')
+import './mod'
