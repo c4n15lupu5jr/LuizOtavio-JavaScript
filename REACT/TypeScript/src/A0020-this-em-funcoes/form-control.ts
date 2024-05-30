@@ -10,7 +10,8 @@ const password2 = document.querySelector('.password2') as HTMLInputElement;
 
 cosnt submitEventFn = (event: Event) => {
   event.preventDefault();
-  hideErrorMessages(this);
+  const target = event.target as HTMLFormElement;
+  hideErrorMessages(target);
   checkForEmptyFields(username, email, password, password2);
   checkEmail(email);
   checkEqualPasswords(password, password2);
